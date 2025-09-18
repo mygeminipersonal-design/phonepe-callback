@@ -1,14 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbxxxxxxx/exec">
-  <title>Redirecting...</title>
+  <meta charset="utf-8">
+  <title>PhonePe callback (redirect helper)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background:#f7f7fb}
+    .card{background:#fff;border-radius:10px;padding:20px;box-shadow:0 8px 30px rgba(12,12,20,0.06);max-width:720px;text-align:center}
+    a.button{display:inline-block;padding:10px 14px;background:#0366d6;color:#fff;border-radius:8px;text-decoration:none;margin-top:12px}
+    p.small{color:#555;margin-top:6px;font-size:13px}
+  </style>
 </head>
 <body>
-  <p>Redirecting to payment handler...</p>
-  <script>
-    // fallback JS redirect
-    window.location.href = "https://script.google.com/macros/s/AKfycbytvuKr29AawA1OGyWfm4JrKodr3EhRgGayrBgIPNNraoTSXtu67Sr1JfQXHT2OOsceVg/exec";
-  </script>
+  <div class="card">
+    <h2>PhonePe webhook helper</h2>
+    <p class="small">This page exists so merchant forms accept a valid Website URL. It won’t proxy POSTs. Use your Apps Script exec URL as the webhook in the PhonePe dashboard after registration.</p>
+
+    <!-- Replace the href below with your real Apps Script exec URL -->
+    <a class="button" href="https://script.google.com/macros/s/AKfycbytvuKr29AawA1OGyWfm4JrKodr3EhRgGayrBgIPNNraoTSXtu67Sr1JfQXHT2OOsceVg/exec" target="_blank" rel="noopener">Open Apps Script exec URL</a>
+
+    <p class="small">If you want a server that proxies/forwards POSTs, ask and I’ll show a short Netlify/Vercel function snippet.</p>
+  </div>
 </body>
 </html>
